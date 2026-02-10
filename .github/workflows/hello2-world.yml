@@ -1,7 +1,9 @@
-name: hello-world
+name: Hello World Workflow
+
 on:
   push:
-    branches: [master]
+    branches:
+      - master
   workflow_dispatch:
 
 jobs:
@@ -12,4 +14,3 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello World"
-     
